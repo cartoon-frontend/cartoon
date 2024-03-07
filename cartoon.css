@@ -1,0 +1,11 @@
+.topHeading{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border:5px solid red;
+    margin-top: 40px;
+}
+
+.Tsize{
+    font-size: 30px;
+}

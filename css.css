@@ -1,0 +1,11 @@
+#search {
+  border: 10px solid;
+  padding: 5px;
+  border-image: url(./akatsuki-7422263_640.png);
+}
+.info{
+  width: 169px;
+  border: 10px solid;
+  padding: 5px;
+  border-image: url(./cropped-dragonball.png);
+}

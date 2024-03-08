@@ -1,11 +1,59 @@
-.topHeading{
+.topHeading {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    border:5px solid red;
+    justify-content: space-around;
+    border: 5px solid red;
     margin-top: 40px;
 }
 
-.Tsize{
+.Tsize {
     font-size: 30px;
+    cursor: pointer;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#returnTop {
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+#returnTop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@keyframes neonBlink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.35;
+    }
+    50% {
+        opacity: 0.85;
+    }
+    75% {
+        opacity: 0.55;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.neonBlink {
+    animation: neonBlink 2s infinite;
+}
+
+.grayedOut {
+    filter: grayscale(100%);
 }

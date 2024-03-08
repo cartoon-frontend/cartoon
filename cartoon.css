@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .topHeading{
     display: flex;
     align-items: center;
@@ -6,6 +11,95 @@
     margin-top: 40px;
 }
 
+#randomBackGround {
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1; 
+}
+
 .Tsize{
     font-size: 30px;
 }
+
+#carouseSum {
+    margin-top: 150px;
+    overflow: hidden;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .box {
+    width: 20vw;
+    height: 200px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    filter: grayscale(0);
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  
+  .box:hover {
+    transform: scale(1.2);
+    filter: grayscale(1);
+    border-radius: 20px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100vw;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 15s infinite linear;
+  }
+  
+  .carousel2 {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 17s infinite linear;
+  }
+  
+  .carousel3{
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 20s infinite linear;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100vw);
+    }
+  }
+  
+  .expanded-image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+  }
+
+  .expanded-image {
+    max-width: 100vw;
+    max-height: 100vw;
+  }
+  
+

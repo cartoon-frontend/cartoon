@@ -1,10 +1,21 @@
 .topHeading {
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border: 5px solid red;
     margin-top: 40px;
-}
+    z-index: 100; 
+  }
+  
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1; 
+  }
 
 .Tsize {
     font-size: 30px;
@@ -12,9 +23,11 @@
 }
 
 #buttonContainer {
-    display: flex;
-    justify-content: flex-end; 
-}
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
 
 #returnTop {
     width: 80px;
